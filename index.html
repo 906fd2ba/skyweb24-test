@@ -1,0 +1,113 @@
+<html>
+
+    <head>
+        <title>SKYWEB TEST</title>
+
+        <!-- uikit -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/uikit.min.css" />
+        <script src="assets/js/uikit.min.js"></script>
+
+        <!-- jquery -->
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+        <!-- icon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+        <!-- document encoding: utf-8 -->
+        <meta charset="utf-8">
+
+        <!-- свои стили и скрипты -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/script.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">СИСТЕМА БРОНИРОВАНИЯ</div>
+
+            <div class="info">
+                <div class="square-booked"></div> - забронирован
+                <div class="square-selected"></div> - выбран
+            </div>
+
+            <div class="curMonYear">СЕНТЯБРЬ 2021</div>
+
+            <div class="booking">
+                <table class="calendar noselect" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <th>Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пт</th>
+                        <th>Сб</th>
+                        <th>Вс</th>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td class="bookable">1</td>
+                        <td class="bookable">2</td>
+                        <td class="bookable">3</td>
+                        <td class="bookable">4</td>
+                    </tr>
+                    <tr>
+                        <td class="bookable">5</td>
+                        <td class="bookable">6</td>
+                        <td class="bookable">7</td>
+                        <td class="bookable">8</td>
+                        <td class="bookable">9</td>
+                        <td class="bookable">10</td>
+                        <td class="bookable">11</td>
+                    </tr>
+                    <tr>
+                        <td class="bookable">12</td>
+                        <td class="bookable">13</td>
+                        <td class="bookable">14</td>
+                        <td class="bookable">15</td>
+                        <td class="bookable">16</td>
+                        <td class="bookable">17</td>
+                        <td class="bookable">18</td>
+                    </tr>
+                    <tr>
+                        <td class="bookable">19</td>
+                        <td class="bookable">20</td>
+                        <td class="bookable">21</td>
+                        <td class="bookable">22</td>
+                        <td class="bookable">23</td>
+                        <td class="bookable">24</td>
+                        <td class="bookable">25</td>
+                    </tr>
+                    <tr>
+                        <td class="bookable">26</td>
+                        <td class="bookable">27</td>
+                        <td class="bookable">28</td>
+                        <td class="bookable">29</td>
+                        <td class="bookable">30</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                </table>
+
+                <div class="sub-container">
+                    <span class="booking-in-progress hidden">Идет бронирование...</span>
+                    <span class="booking-successful hidden">Бронирование успешно завершено.</span>
+                    <span class="booking-error hidden">Произошла ошибка при бронировании.</span>
+                    <button class="uk-button btn-book hidden" id="js-modal-confirm">Забронировать</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
